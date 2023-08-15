@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dpr</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="dist/output.css" rel="stylesheet" />
+    <!-- <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css"
+      rel="stylesheet"
+    /> -->
+  </head>
+  <body class="antialiased">
+    <header
+      class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10"
+    >
+      <div class="container">
+        <div class="flex items-center justify-between relative">
+          <div class="px-4">
+            <a
+              href="#home"
+              class="font-bold text-lg text-black block py-6 text-white"
+              >Dani PR</a
+            >
+          </div>
+          <div class="flex items-center px-4">
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="block absolute right-4 lg:hidden"
+            >
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-top-left"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
+              ></span>
+            </button>
+            <nav
+              id="nav-menu"
+              class="hidden h-[250px] lg:h-full absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="#home"
+                    class="text-base text-black lg:text-white py-2 mx-8 flex group-hover:text-primary"
+                    >Home</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#about"
+                    class="text-base text-black lg:text-white py-2 w-full mx-8 flex group-hover:text-primary"
+                    >About Me</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#portfolio"
+                    class="text-base text-black lg:text-white py-2 mx-8 flex group-hover:text-primary"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#pendidikan"
+                    class="text-base text-black lg:text-white py-2 mx-8 flex group-hover:text-primary"
+                    >Pendidikan</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#Contact"
+                    class="text-base text-black lg:text-white py-2 mx-8 flex group-hover:text-primary"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main-container">
+      <!-- Right Content Goes here -->
+      <div class="right-content">
+        <section id="home">
+          <div class="backround mt-8">
+            <h1 class="text-profile1">MY LIFE</h1>
+            <!-- <img class="bk-1" src="backround/apa itu sija (1).png"> -->
+            <div class="part">
+              <img class="profile" src="foto/Dani_p-removebg-preview.png" />
+            </div>
+            <h1 class="text-profile2">MY JOURNEY</h1>
+          </div>
+        </section>
+        <section id="about" class="">
+          <!-- <section class="mt-[180px]"> -->
+          <div class="container justify-center flex flex-col w-[95%]">
+            <h1 class="text-white text-[28px] font">
+              Programmer Web Developer,<br />Turning your idea into<br />
+              cool Website.
+            </h1>
+            <p class="mt-2 text-neutral-300">
+              I am Dani,<br />
+              Junior Web Developer. I made this website to share all my
+              code-journey and all the project that i have done. I am here to
+              help you build your amazing Website!
+            </p>
+            <div class="flex flex-row text-center mt-5 items-center">
+              <button
+                type="button"
+                data-modal-target="modal-skill"
+                data-modal-toggle="modal-skill"
+                class="text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="w-4 h-4 mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
+                  ></path>
+                </svg>
+                Contact Me!
+              </button>
+              <a href="" class="ml-4"
+                ><img
+                  src="foto/Twitter-X-White-Logo-PNG.png"
+                  class="h-3"
+                  alt=""
+              /></a>
+              <a href="" class="ml-4"
+                ><img
+                  src="https://www.pngfind.com/pngs/b/277-2773517_instagram-png-white.png"
+                  class="h-4"
+                  alt=""
+              /></a>
+              <a href="" class="ml-4"
+                ><img src="foto/pngegg.png" class="h-4" alt=""
+              /></a>
+            </div>
+          </div>
+          <!-- </section> -->
+          <div class="w-[100%]">
+            <div class="mt-32 justify-center">
+              <div class="w-1/2 absolute right-0 z-10">
+                <li class="card w-[150px] h-[110px]">
+                  <div class="main-component">
+                    <h1 class="component">
+                      <i class="fa-solid fa-question"></i>
+                    </h1>
+                    <hr />
+                    <p>ABOUT ME</p>
+                  </div>
+                  <div class="textbox"></div>
+                  <div class="content">
+                    <p>
+                      Dani Pratama Ramadhan
+                      <br />
+                      20/10/2006
+                      <br />
+                      Ig: _im_danip
+                    </p>
+                  </div>
+                </li>
+              </div>
+              <img
+                src="foto/Web Developer (Konten Instagram (Persegi)) (1).png"
+                class="w-full relative pt-8"
+                alt=""
+              />
+            </div>
+            <div class="justify-center items-center container flex">
+              <div
+                class="mt-16 w-11/12 h-28 bg-white pt-2 pd-2 px-3 rounded-xl font-xs"
+              >
+                <h1>Halo,</h1>
+                <p>
+                  Saya Adalah Web Developer yang bercita-cita menjadi Presiden
+                  agar dapat menguasai negara api
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="project" class="mt-32">
+          <div class="pembatas">
+            <h1>
+              Things I have done for <br />
+              My digital Project
+            </h1>
+          </div>
+          <main
+            class="relative min-h-screen flex flex-col justify-center overflow-hidden"
+          >
+            <div class="w-full max-w-6xl mx-auto px-4 md:px-6 py-24">
+              <!-- Cards container -->
+              <div
+                class="max-w-sm mx-auto grid gap-6 lg:grid-cols-3 items-start lg:max-w-none group"
+                data-spotlight
+              >
+                <!-- Card 1 -->
+                <div
+                  class="main-card relative h-full bg-slate-800 rounded-3xl p-px before:absolute before:w-80 before:h-80 before:-left-40 before:-top-40 before:bg-slate-400 before:rounded-full before:opacity-0 before:pointer-events-none before:transition-opacity before:duration-500 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:group-hover:opacity-100 before:z-10 before:blur-[100px] after:absolute after:w-96 after:h-96 after:-left-48 after:-top-48 after:bg-indigo-500 after:rounded-full after:opacity-0 after:pointer-events-none after:transition-opacity after:duration-500 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:hover:opacity-10 after:z-30 after:blur-[100px] overflow-hidden"
+                >
+                  <div
+                    class="relative h-full bg-black p-6 pb-8 rounded-[inherit] z-20 overflow-hidden"
+                  >
+                    <!-- Radial gradient -->
+                    <div
+                      class="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/2 aspect-square"
+                      aria-hidden="true"
+                    >
+                      <div
+                        class="absolute inset-0 translate-z-0 bg-slate-800 rounded-full blur-[80px]"
+                      ></div>
+                    </div>
+                    <div class="flex flex-col h-full items-center text-center">
+                      <img class="web-sija absolute px-3 rounded-3xl"  src="/foto/WEB-SIJA.png" alt="">
+                      <!-- Image -->
+                      <div class="relative inline-flex items-center">
+                        <div
+                          class="w-[40%] h-[40%] absolute inset-0 m-auto -translate-y-[10%] blur-3xl -z-10 rounded-full bg-indigo-600"
+                          aria-hidden="true"
+                        ></div>
+                        <img
+                          class="image-card inline-flex"
+                          src="/foto/card-01.png"
+                          width="250"
+                          height="250"
+                          alt="Card 01"
+                        />
+                      </div>
+                      <!-- Text -->
+                      <div class="grow mb-5">
+                        <h2 class="text-xl text-slate-200 font-bold mb-1">
+                          Amazing Integration
+                        </h2>
+                        <p class="text-sm text-slate-500">
+                          Quickly apply filters to refine your issues lists and
+                          create custom views.
+                        </p>
+                      </div>
+                      <a
+                        class="inline-flex justify-center items-center whitespace-nowrap rounded-lg bg-slate-800 hover:bg-slate-900 border border-slate-700 px-3 py-1.5 text-sm font-medium text-slate-300 focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 dark:focus-visible:ring-slate-600 transition-colors duration-150"
+                        href="#0"
+                      >
+                        <svg
+                          class="fill-slate-500 mr-2"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="14"
+                        >
+                          <path
+                            d="M12.82 8.116A.5.5 0 0 0 12 8.5V10h-.185a3 3 0 0 1-2.258-1.025l-.4-.457-1.328 1.519.223.255A5 5 0 0 0 11.815 12H12v1.5a.5.5 0 0 0 .82.384l3-2.5a.5.5 0 0 0 0-.768l-3-2.5ZM12.82.116A.5.5 0 0 0 12 .5V2h-.185a5 5 0 0 0-3.763 1.708L3.443 8.975A3 3 0 0 1 1.185 10H1a1 1 0 1 0 0 2h.185a5 5 0 0 0 3.763-1.708l4.609-5.267A3 3 0 0 1 11.815 4H12v1.5a.5.5 0 0 0 .82.384l3-2.5a.5.5 0 0 0 0-.768l-3-2.5ZM1 4h.185a3 3 0 0 1 2.258 1.025l.4.457 1.328-1.52-.223-.254A5 5 0 0 0 1.185 2H1a1 1 0 0 0 0 2Z"
+                          />
+                        </svg>
+                        <p>Connect</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                  class="main-card relative h-full bg-slate-800 rounded-3xl p-px before:absolute before:w-80 before:h-80 before:-left-40 before:-top-40 before:bg-slate-400 before:rounded-full before:opacity-0 before:pointer-events-none before:transition-opacity before:duration-500 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:group-hover:opacity-100 before:z-10 before:blur-[100px] after:absolute after:w-96 after:h-96 after:-left-48 after:-top-48 after:bg-indigo-500 after:rounded-full after:opacity-0 after:pointer-events-none after:transition-opacity after:duration-500 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:hover:opacity-10 after:z-30 after:blur-[100px] overflow-hidden"
+                >
+                  <div
+                    class="relative h-full bg-black p-6 pb-8 rounded-[inherit] z-20 overflow-hidden"
+                  >
+                    <!-- Radial gradient -->
+                    <div
+                      class="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/2 aspect-square"
+                      aria-hidden="true"
+                    >
+                      <div
+                        class="absolute inset-0 translate-z-0 bg-slate-800 rounded-full blur-[80px]"
+                      ></div>
+                    </div>
+                    <div class="flex flex-col h-full items-center text-center">
+                      <img class="web-sija absolute px-3 rounded-3xl"  src="/foto/WEB-SIJA.png" alt="">
+                      <!-- Image -->
+                      <div class="relative inline-flex items-center">
+                        <div
+                          class="w-[40%] h-[40%] absolute inset-0 m-auto -translate-y-[10%] blur-3xl -z-10 rounded-full bg-indigo-600"
+                          aria-hidden="true"
+                        ></div>
+                        <img
+                          class="image-card inline-flex"
+                          src="/foto/card-01.png"
+                          width="250"
+                          height="250"
+                          alt="Card 01"
+                        />
+                      </div>
+                      <!-- Text -->
+                      <div class="grow mb-5">
+                        <h2 class="text-xl text-slate-200 font-bold mb-1">
+                          Amazing Integration
+                        </h2>
+                        <p class="text-sm text-slate-500">
+                          Quickly apply filters to refine your issues lists and
+                          create custom views.
+                        </p>
+                      </div>
+                      <a
+                        class="inline-flex justify-center items-center whitespace-nowrap rounded-lg bg-slate-800 hover:bg-slate-900 border border-slate-700 px-3 py-1.5 text-sm font-medium text-slate-300 focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 dark:focus-visible:ring-slate-600 transition-colors duration-150"
+                        href="#0"
+                      >
+                        <svg
+                          class="fill-slate-500 mr-2"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="14"
+                        >
+                          <path
+                            d="M12.82 8.116A.5.5 0 0 0 12 8.5V10h-.185a3 3 0 0 1-2.258-1.025l-.4-.457-1.328 1.519.223.255A5 5 0 0 0 11.815 12H12v1.5a.5.5 0 0 0 .82.384l3-2.5a.5.5 0 0 0 0-.768l-3-2.5ZM12.82.116A.5.5 0 0 0 12 .5V2h-.185a5 5 0 0 0-3.763 1.708L3.443 8.975A3 3 0 0 1 1.185 10H1a1 1 0 1 0 0 2h.185a5 5 0 0 0 3.763-1.708l4.609-5.267A3 3 0 0 1 11.815 4H12v1.5a.5.5 0 0 0 .82.384l3-2.5a.5.5 0 0 0 0-.768l-3-2.5ZM1 4h.185a3 3 0 0 1 2.258 1.025l.4.457 1.328-1.52-.223-.254A5 5 0 0 0 1.185 2H1a1 1 0 0 0 0 2Z"
+                          />
+                        </svg>
+                        <p>Connect</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 3 -->
+                <div
+                  class="main-card relative h-full bg-slate-800 rounded-3xl p-px before:absolute before:w-80 before:h-80 before:-left-40 before:-top-40 before:bg-slate-400 before:rounded-full before:opacity-0 before:pointer-events-none before:transition-opacity before:duration-500 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:group-hover:opacity-100 before:z-10 before:blur-[100px] after:absolute after:w-96 after:h-96 after:-left-48 after:-top-48 after:bg-indigo-500 after:rounded-full after:opacity-0 after:pointer-events-none after:transition-opacity after:duration-500 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:hover:opacity-10 after:z-30 after:blur-[100px] overflow-hidden"
+                >
+                  <div
+                    class="relative h-full bg-black p-6 pb-8 rounded-[inherit] z-20 overflow-hidden"
+                  >
+                    <!-- Radial gradient -->
+                    <div
+                      class="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/2 aspect-square"
+                      aria-hidden="true"
+                    >
+                      <div
+                        class="absolute inset-0 translate-z-0 bg-slate-800 rounded-full blur-[80px]"
+                      ></div>
+                    </div>
+                    <div class="flex flex-col h-full items-center text-center">
+                      <img class="web-sija absolute px-3 rounded-3xl"  src="/foto/WEB-SIJA.png" alt="">
+                      <!-- Image -->
+                      <div class="relative inline-flex items-center">
+                        <div
+                          class="w-[40%] h-[40%] absolute inset-0 m-auto -translate-y-[10%] blur-3xl -z-10 rounded-full bg-indigo-600"
+                          aria-hidden="true"
+                        ></div>
+                        <img
+                          class="image-card inline-flex"
+                          src="/foto/card-01.png"
+                          width="250"
+                          height="250"
+                          alt="Card 01"
+                        />
+                      </div>
+                      <!-- Text -->
+                      <div class="grow mb-5">
+                        <h2 class="text-xl text-slate-200 font-bold mb-1">
+                          Amazing Integration
+                        </h2>
+                        <p class="text-sm text-slate-500">
+                          Quickly apply filters to refine your issues lists and
+                          create custom views.
+                        </p>
+                      </div>
+                      <a
+                        class="inline-flex justify-center items-center whitespace-nowrap rounded-lg bg-slate-800 hover:bg-slate-900 border border-slate-700 px-3 py-1.5 text-sm font-medium text-slate-300 focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 dark:focus-visible:ring-slate-600 transition-colors duration-150"
+                        href="#0"
+                      >
+                        <svg
+                          class="fill-slate-500 mr-2"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="14"
+                        >
+                          <path
+                            d="M12.82 8.116A.5.5 0 0 0 12 8.5V10h-.185a3 3 0 0 1-2.258-1.025l-.4-.457-1.328 1.519.223.255A5 5 0 0 0 11.815 12H12v1.5a.5.5 0 0 0 .82.384l3-2.5a.5.5 0 0 0 0-.768l-3-2.5ZM12.82.116A.5.5 0 0 0 12 .5V2h-.185a5 5 0 0 0-3.763 1.708L3.443 8.975A3 3 0 0 1 1.185 10H1a1 1 0 1 0 0 2h.185a5 5 0 0 0 3.763-1.708l4.609-5.267A3 3 0 0 1 11.815 4H12v1.5a.5.5 0 0 0 .82.384l3-2.5a.5.5 0 0 0 0-.768l-3-2.5ZM1 4h.185a3 3 0 0 1 2.258 1.025l.4.457 1.328-1.52-.223-.254A5 5 0 0 0 1.185 2H1a1 1 0 0 0 0 2Z"
+                          />
+                        </svg>
+                        <p>Connect</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              <!-- End: Cards container -->
+            </div>
+          </main>
+        </section>
+        <section class="pt-32">
+          <div class="container w-[95%] pt-[80px]">
+            <div class="row">
+              <h1 class="text-white text-[28px] font">
+                What Skill <br />
+                I Have For You?
+              </h1>
+              <p class="mt-2 text-neutral-300">
+                See completely what skill i will offer for you <br />
+                and other client
+              </p>
+              <button
+                type="button"
+                data-modal-target="modal-skill"
+                data-modal-toggle="modal-skill"
+                class="text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm mt-3 px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700"
+              >
+                <svg
+                  aria-hiddenn="true"
+                  class="w-4 h-4 mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
+                  ></path>
+                </svg>
+                See More
+              </button>
+
+              <!-- Main modal -->
+              <div
+                id="modal-skill"
+                tabindex="-1"
+                aria-hidden="true"
+                class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
+              >
+                <div class="relative w-full max-w-md max-h-full">
+                  <!-- Modal content -->
+                  <div
+                    class="relative bg-[#020914] rounded-lg shadow dark:bg-gray-700"
+                  >
+                    <button
+                      type="button"
+                      class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                      data-modal-hide="modal-skill"
+                    >
+                      <svg
+                        class="w-3 h-3"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 14 14"
+                      >
+                        <path
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+                        />
+                      </svg>
+                      <span class="sr-only">Close modal</span>
+                    </button>
+                    <!-- Modal header -->
+                    <div class="px-6 py-4 rounded-t">
+                      <h3
+                        class="text-base font-semibold text-white lg:text-xl dark:text-gray-500"
+                      >
+                        Skills
+                      </h3>
+                      <p
+                        class="text-sm font-normal text-gray-300 dark:text-gray-500"
+                      >
+                        You'Re Awesome
+                      </p>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="px-6">
+                      <ul class="my-4 space-y-3 w-11/12 list-none">
+                        <li>
+                          <div class="flex justify-between pb-2 flex-col">
+                            <p
+                              class="text-xs text-[#ffda59] dark:text-indigo-400 font-bold"
+                            >
+                              90% Bootstrap
+                            </p>
+                            <p
+                              class="text-xs font-bold text-gray-400 dark:text-gray-800"
+                            >
+                              Complete
+                            </p>
+                          </div>
+                          <div class="flex items-center">
+                            <div
+                              class="w-[90%] bg-[#ffda59] h-1 rounded-tl rounded-bl mr-1"
+                            ></div>
+                            <div
+                              class="w-[7%] bg-gray-200 dark:bg-gray-700 h-1 mr-1 relative"
+                            >
+                              <div class="h-1 w-1/6 bg-[#ffda59]"></div>
+                            </div>
+                            <div
+                              class="w-[3%] bg-gray-200 dark:bg-gray-700 h-1 rounded-tr rounded-br"
+                            ></div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="flex justify-between pb-2 flex-col">
+                            <p
+                              class="text-xs text-[#ffda59] dark:text-indigo-400 font-bold"
+                            >
+                              88% Tailwind
+                            </p>
+                            <p
+                              class="text-xs font-bold text-gray-400 dark:text-gray-800"
+                            >
+                              Complete
+                            </p>
+                          </div>
+                          <div class="flex items-center">
+                            <div
+                              class="w-[88%] bg-[#ffda59] h-1 rounded-tl rounded-bl mr-1"
+                            ></div>
+                            <div
+                              class="w-[7%] bg-gray-200 dark:bg-gray-700 h-1 mr-1 relative"
+                            >
+                              <div class="h-1 w-1/6 bg-[#ffda59]"></div>
+                            </div>
+                            <div
+                              class="w-[5%] bg-gray-200 dark:bg-gray-700 h-1 rounded-tr rounded-br"
+                            ></div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="flex justify-between pb-2 flex-col">
+                            <p
+                              class="text-xs text-[#ffda59] dark:text-indigo-400 font-bold"
+                            >
+                              85% PHP
+                            </p>
+                            <p
+                              class="text-xs font-bold text-gray-400 dark:text-gray-800"
+                            >
+                              Complete
+                            </p>
+                          </div>
+                          <div class="flex items-center">
+                            <div
+                              class="w-[85%] bg-[#ffda59] h-1 rounded-tl rounded-bl mr-1"
+                            ></div>
+                            <div
+                              class="w-[10%] bg-gray-200 dark:bg-gray-700 h-1 mr-1 relative"
+                            >
+                              <div class="h-1 w-1/6 bg-[#ffda59]"></div>
+                            </div>
+                            <div
+                              class="w-[5%] bg-gray-200 dark:bg-gray-700 h-1 rounded-tr rounded-br"
+                            ></div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="flex justify-between pb-2 flex-col">
+                            <p
+                              class="text-xs text-[#ffda59] dark:text-indigo-400 font-bold"
+                            >
+                              75% Laravel
+                            </p>
+                            <p
+                              class="text-xs font-bold text-gray-400 dark:text-gray-800"
+                            >
+                              Complete
+                            </p>
+                          </div>
+                          <div class="flex items-center">
+                            <div
+                              class="w-[75%] bg-[#ffda59] h-1 rounded-tl rounded-bl mr-1"
+                            ></div>
+                            <div
+                              class="w-[15%] bg-gray-200 dark:bg-gray-700 h-1 mr-1 relative"
+                            >
+                              <div class="h-1 w-1/6 bg-[#ffda59]"></div>
+                            </div>
+                            <div
+                              class="w-[10%] bg-gray-200 dark:bg-gray-700 h-1 rounded-tr rounded-br"
+                            ></div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="flex justify-between pb-2 flex-col">
+                            <p
+                              class="text-xs text-[#ffda59] dark:text-indigo-400 font-bold"
+                            >
+                              70% Javascript
+                            </p>
+                            <p
+                              class="text-xs font-bold text-gray-400 dark:text-gray-800"
+                            >
+                              Complete
+                            </p>
+                          </div>
+                          <div class="flex items-center">
+                            <div
+                              class="w-[70%] bg-[#ffda59] h-1 rounded-tl rounded-bl mr-1"
+                            ></div>
+                            <div
+                              class="w-[20%] bg-gray-200 dark:bg-gray-700 h-1 mr-1 relative"
+                            >
+                              <div class="h-1 w-1/6 bg-[#ffda59]"></div>
+                            </div>
+                            <div
+                              class="w-[10%] bg-gray-200 dark:bg-gray-700 h-1 rounded-tr rounded-br"
+                            ></div>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="pb-3">
+                        <a
+                          href="#"
+                          class="inline-flex items-center text-xs font-normal text-gray-400 hover:underline dark:text-gray-500"
+                        >
+                          <svg
+                            class="w-3 h-3 mr-2"
+                            aria-hiddenn="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 20 20"
+                          >
+                            <path
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M7.529 7.988a2.502 2.502 0 0 1 5 .191A2.441 2.441 0 0 1 10 10.582V12m-.01 3.008H10M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                            />
+                          </svg>
+                          Why do I need to know with your Skills?</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <ul
+                class="text-white mt-5 font-bold tracking-[.25em]"
+                style="font-family: 'proxima-nova', sans-serif"
+              >
+                <li class="text-[16px]">
+                  <span class="text-[19px]">01.</span>&nbsp;PHP
+                </li>
+                <li class="text-[16px]">
+                  <span class="text-[19px]">02.</span>&nbsp;Javascript
+                </li>
+                <li class="text-[16px]">
+                  <span class="text-[19px]">03.</span>&nbsp;Tailwind
+                </li>
+                <li class="text-[16px]">
+                  <span class="text-[19px]">04.</span>&nbsp;Bootstrap
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section id="footer">
+          <p style="color: #808080; text-align: center">
+            Made width &#10084; by Dani
+          </p>
+        </section>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+        },
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
+    <script src="pro-slide.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
+    <!-- menu -->
+    <script src="index.js"></script>
+    <script src="./spotlight-effect.js"></script>
+    <script src="dist/js/script.js"></script>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+</html>
