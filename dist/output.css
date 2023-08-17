@@ -1327,6 +1327,10 @@ video {
   padding-top: 6rem;
 }
 
+.pt-20 {
+  padding-top: 5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -2022,6 +2026,10 @@ video {
 
   .md\:pl-16 {
     padding-left: 4rem;
+  }
+
+  .md\:pt-0 {
+    padding-top: 0px;
   }
 }
 
