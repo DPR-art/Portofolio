@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://www.dpr-labs.web.id/",
+      "permanent": true
+    }
+  ]
+}
